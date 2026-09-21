@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Complete your Get from Ayush order." />
+  <title>Checkout — GET / AYUSH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="buy-page">
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Get from Ayush home"><span>GET</span><i>/</i><b>AYUSH</b></a>
+    <a class="back-link" href="index.html#shop">← Keep shopping</a>
+  </header>
+  <main class="buy-main">
+    <div class="buy-intro"><p class="eyebrow">// Secure checkout</p><h1>LOCK IN<br /><em>YOUR GEAR.</em></h1><p>Almost ready. Enter your details and we will get your loadout moving.</p></div>
+    <div class="buy-layout">
+      <form class="checkout-form" id="checkout-form">
+        <section class="form-section"><div class="form-heading"><span>01</span><h2>Contact</h2></div><label>Email address<input type="email" name="email" placeholder="you@email.com" required /></label></section>
+        <section class="form-section"><div class="form-heading"><span>02</span><h2>Delivery</h2></div><div class="form-grid"><label>First name<input type="text" name="firstName" placeholder="Ayush" required /></label><label>Last name<input type="text" name="lastName" placeholder="Sharma" required /></label></div><label>Address<input type="text" name="address" placeholder="Street and house number" required /></label><div class="form-grid"><label>City<input type="text" name="city" placeholder="New Delhi" required /></label><label>Postal code<input type="text" name="postal" placeholder="110001" required /></label></div><label>Country<select name="country"><option>India</option><option>United States</option><option>United Kingdom</option><option>Canada</option></select></label></section>
+        <section class="form-section"><div class="form-heading"><span>03</span><h2>Payment</h2></div><label>Card number<input type="text" name="card" inputmode="numeric" placeholder="4242 4242 4242 4242" minlength="12" required /></label><div class="form-grid"><label>Expiry<input type="text" name="expiry" placeholder="MM / YY" required /></label><label>CVV<input type="text" name="cvv" placeholder="123" minlength="3" required /></label></div></section>
+        <button class="button button-primary place-order" type="submit">Place order <span>↗</span></button>
+      </form>
+      <aside class="order-summary"><div class="summary-heading"><p class="eyebrow">// Your loadout</p><h2>ORDER<br />SUMMARY</h2></div><div class="summary-items" id="summary-items"></div><div class="summary-total"><div><span>Subtotal</span><strong id="summary-subtotal">$0</strong></div><div><span>Shipping</span><strong>Free</strong></div><div class="grand-total"><span>Total</span><strong id="summary-total">$0</strong></div></div><p class="secure-note">✦ Your order is encrypted and secure.</p></aside>
+    </div>
+    <div class="order-success" aria-hidden="true"><span class="success-mark">✓</span><p class="eyebrow">// Loadout confirmed</p><h2>YOU'RE<br /><em>IN.</em></h2><p>Your order is locked. We sent the details to your inbox.</p><a class="button button-primary" href="index.html">Back to the drop <span>↗</span></a></div>
+  </main>
+  <footer class="site-footer"><a class="logo" href="index.html"><span>GET</span><i>/</i><b>AYUSH</b></a><p>© 2024 Get from Ayush Supply Co.</p><div class="footer-links"><a href="index.html#shop">Instagram</a><a href="index.html#shop">Discord</a><a href="index.html#shop">Contact</a></div></footer>
+  <script src="buy.js"></script>
+</body>
+</html>
